@@ -1,0 +1,40 @@
+/* hero img (unsplash img Photo by JOHN TOWNER on Unsplash) */
+section .hero {
+    background-image: url("../../images/john-towner-unsplash-comp3M.jpg");
+    alt: "mountains";
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; 
+}
+
+/* turning off parallax on small viewports*/
+@media only screen and (max-device-width: 475px) {
+    section .hero {
+        background-image: url("../../images/john-towner-unsplash-comp3M.jpg");
+        alt: "mountains";
+        height: 500px;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: 50% 30%;
+        background-size: cover; 
+    }    
+}
+
+/* hero text */
+section figure h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 4px black;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #c7c5cf;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    margin-bottom: 0px;
+}

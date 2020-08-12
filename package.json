@@ -1,7 +1,7 @@
 {
-  "name": "PLANiT",
+  "name": "VincentV",
   "version": "1.0.0",
-  "description": "PLANit Express",
+  "description": "VincentV Express",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",

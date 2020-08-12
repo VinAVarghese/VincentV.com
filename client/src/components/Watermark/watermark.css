@@ -1,0 +1,8 @@
+.logoside {
+    height: 50vw;
+    display: flex;
+    justify-items: center;
+    margin:50px;
+    opacity: 50%;
+}
+

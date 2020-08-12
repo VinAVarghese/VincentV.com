@@ -1,0 +1,39 @@
+/* bio profile picture */
+#biopic {
+    position: relative;
+    bottom: 100px;
+    padding: none none;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    /* width: 100%;
+    height: auto;
+    max-width: 350px;
+    min-width: 225px; */
+}
+
+.iframe-figure-div{
+    margin: 0;
+}
+
+.resume-window {
+    position: relative;
+    bottom: 100px;
+    border-radius: 70px;
+}
+
+.resume-link{
+    position: relative;
+    bottom: 63px;
+    color: #324159;
+    display: none;
+}
+
+/* Displaying link to resume for smaller screens (iFrame not sizing correctly) */
+@media only screen and (max-device-width: 475px) {
+    .resume-window {
+        display: none;
+    }
+    .resume-link{
+        display: block;
+    }
+}

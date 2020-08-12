@@ -1,0 +1,42 @@
+.myName {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    color:#c7c5cf;
+    padding-top: .6rem;
+    padding-right: 2rem;
+    white-space: nowrap;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.d-flex a:hover {
+    text-decoration: none;
+}
+
+.navbackground {
+    background-color: #324159;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* .myName size and padding settings small viewports*/
+@media only screen and (max-device-width: 475px) {
+    .myName {
+        justify-content: center;
+        align-items: center;
+        font-family: 'Libre Franklin', sans-serif;
+        text-align: center;
+        /* text-shadow: 1px 1px 4px black; */
+        color:#c7c5cf;
+        padding-top: .6rem;
+        padding-right: 1.5rem;
+        white-space: nowrap;
+        font-size: 5vw;
+        text-transform: uppercase;
+    }
+}

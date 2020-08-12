@@ -1,0 +1,23 @@
+.pageheader {
+    text-align: center;
+    font-family:'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px black;
+    font-weight: 500;
+    color: #c7c5cf;
+    padding: 30px;
+    margin: 0;
+    background-image: url("../../images/john-towner-unsplash-comp3M.jpg");
+    alt: "mountains";
+    background-attachment: scroll;
+    background-position: 50% 20%;
+    background-size: cover; 
+}
+
+header h1 {
+    margin: 0;
+}
+
+.buffer{
+    height: 15px;
+}

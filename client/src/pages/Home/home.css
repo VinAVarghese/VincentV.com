@@ -1,0 +1,32 @@
+/* bio profile picture */
+#biopic {
+    position: relative;
+    bottom: 100px;
+    padding: none none;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    /* width: 100%;
+    height: auto;
+    max-width: 350px;
+    min-width: 225px; */
+}
+    
+
+/* bio first letter */
+.firstcharacter {
+    color: #982b34;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+/* bio text */
+section article p {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 100px;
+}

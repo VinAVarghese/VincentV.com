@@ -1,0 +1,9 @@
+footer {
+    text-align: center;
+    color: #c7c5cf;
+    background-color:#1f273f;
+}
+
+#sticky-footer {
+     flex-shrink: none;
+}

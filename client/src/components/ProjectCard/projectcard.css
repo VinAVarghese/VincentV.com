@@ -1,0 +1,18 @@
+.portfolio-cards {
+    border-color: #982b34;
+    border-style: solid;
+    background-color: #dbdade;
+    margin-bottom: 15px;
+}
+
+.card-title, .card-text {
+    color: #324159;
+} 
+
+.btn {
+    color: #dbdade !important;
+    background-color: #982b34;
+    border-color: #324159;
+    margin: 5px; 
+}
+
