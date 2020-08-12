@@ -7,7 +7,6 @@ export default function HeroSm(props) {
         <header className="pageheader">
             <h1>{props.header}</h1>
         </header>
-        <div className="buffer"></div>
         </>
     )
 }

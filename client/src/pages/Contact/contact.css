@@ -1,0 +1,15 @@
+.sm-logos {
+    width: 50px;
+    height: auto;
+    border-color: #324159;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.thankyou {
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    color: #324159;
+    margin-top: 20px
+}

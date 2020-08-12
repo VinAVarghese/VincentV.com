@@ -1,3 +1,7 @@
 .row-margin{
     margin: 10px 0px 10px; 
 }
+
+.buffer{
+    height: 15px;
+}

@@ -8,6 +8,7 @@ export default function Portfolio() {
     return (
         <>
         <HeroSm header="Portfolio"/>
+        <div className="buffer"></div>
         <div className="row justify-content-center row-margin">
             <ProjectCard imgsrc='./images/mixme.png' project="MixMe" summary="An app for the everyday and aspiring mixologist. Using JavaScript and API consumption, my team created an app that helps user search, make, and even find unique mixed drinks locally!" githublink="https://github.com/VinAVarghese/ProjectMixMe" deployedlink="https://vinavarghese.github.io/ProjectMixMe/" />
             <ProjectCard imgsrc='./images/spontaneouslynow.png' project="Spontaneously Now" summary="This end-to-end app is for the spontaneous-adventurer. Powered by four apis, the app offers a random activity to do when the user is looking for something fun to do! It also doubles as a journal/planner." githublink="https://github.com/VinAVarghese/ProjectArbiter" deployedlink="https://spontaneouslynow.herokuapp.com/" />

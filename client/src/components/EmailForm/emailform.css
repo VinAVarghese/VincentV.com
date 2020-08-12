@@ -1,0 +1,31 @@
+.email-form-title {
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    color: #324159;
+    margin-top: 20px
+}
+
+#red{
+    color: #982b34;
+    /* font-weight: bold; */
+    font-style: italic;
+    font-size: x-large;
+}
+
+.form-control, .form-group {
+    color: #324159;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+ }
+
+.formstyle {
+    border-color: #982b34;
+    border-style: solid;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.text-area {
+    background-color: #dbdade;
+}
