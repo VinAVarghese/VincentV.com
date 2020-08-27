@@ -5,6 +5,7 @@
     border-style: solid;
     border-radius: 10px;
     margin: 5px;
+    margin-top: 0px;
 }
 
 .thankyou {
@@ -12,4 +13,8 @@
     font-family:'Roboto', sans-serif;
     color: #324159;
     margin-top: 20px
+}
+
+.email-link{
+    color: #324159;
 }
