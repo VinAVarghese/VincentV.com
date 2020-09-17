@@ -41,7 +41,7 @@ export default function Navbar() {
         title="The ArrowPeaks"
         centered
         visible={modalVisible}
-        okButtonProps={{ style: { display: 'none' } }}
+        onOk = {toggleModal}
         onCancel={toggleModal}
       >
         <p>some contents...</p>
