@@ -1,15 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Hero from "../../components/Hero/hero"
+import Loading from "../../components/Loading/loading"
 import './home.css';
 
 function Home() {
+
+  const [loading, setLoading] = useState(true)
+
+  const onLoadedData = () => {
+    setLoading(false)
+  }
+
   return (
     <>
+    <Loading display={loading}/>
     <Hero text="Full Stack Developer"/>
     <section className="container">
       <figure className="row justify-content-center">
         <div className="col-sm-4 col-xs-8">
-          <img className="img-fluid" id="biopic" src="./images/desatpic.jpg" alt="profilepic"/>
+          <img className="img-fluid" id="biopic" src="./images/desatpic.jpg" alt="profilepic" onLoad={onLoadedData}/>
         </div>
       </figure>
       <article className="bio row justify-content-sm-center">  
