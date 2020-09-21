@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Modal} from 'antd';
+import Modal from "../Modal/modal"
 import "./navbar.css"
 
 export default function Navbar() {
@@ -37,17 +37,7 @@ export default function Navbar() {
         </ul>
       </div>
     </nav>
-    <Modal
-        title="The ArrowPeaks"
-        centered
-        visible={modalVisible}
-        onOk = {toggleModal}
-        onCancel={toggleModal}
-      >
-        <p>some contents...</p>
-        <p>some contents...</p>
-        <p>some contents...</p>
-    </Modal>
+    <Modal visible={modalVisible}/>
     </>
   )
 }
