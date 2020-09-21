@@ -3,21 +3,20 @@ import "./modal.css"
 
 export default function Modal(props) {
 
-    const [modalClass, setModalClass] = useState()
+    const [modalVisible, setModalVisible] = useState(true)
 
     useEffect(() => {
-        if (props.visible === true) {
-            setModalClass("on")
-        } else {
-            setModalClass("off")
-        }
-    }, [])
-    
+        setModalVisible(!modalVisible)
+    }, [props.visible])
+
+    const toggleModal = () => {
+        setModalVisible(!modalVisible)
+    }    
 
     return (
-        <div className={modalClass}>
+        <div className={modalVisible?"on":"off"}>
             <div className="black-filter">
-                <button className="click-off" onClick=""></button>
+                <button className="click-off" onClick={toggleModal}></button>
                 <div className="modal-div">
 
                 </div>    
