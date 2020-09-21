@@ -8,7 +8,15 @@ function Home() {
   const [loading, setLoading] = useState(true)
 
   const onLoadedData = () => {
-    setLoading(false)
+    let timeleft = 1
+      let countdown = setInterval(() => {
+          if (timeleft === 0){
+              setLoading(false);
+              clearInterval(countdown)
+          } else {
+              timeleft = timeleft - 1;
+          }
+      }, 1000);
   }
 
   return (
