@@ -22,7 +22,6 @@ export default function Contact() {
 
     useEffect(() => {
         onLoadedData()
-        console.log("running");
     }, [])
 
     return (
