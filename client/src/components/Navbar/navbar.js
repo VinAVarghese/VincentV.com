@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="d-flex flex-grow-1">
         <span className="w-100 d-lg-none d-block"></span>
         <a href="/"><h1 className="myName">Vincent Varghese</h1></a>
-        <div className="w-100 text-right hamburger">
+        <div className="w-100 text-right hamburger ">
           <button className="navbar-toggler " type="button" data-toggle="collapse" data-target="#myNavbar7">
             <span className="navbar-toggler-icon"></span>
           </button>
