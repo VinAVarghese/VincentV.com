@@ -1,13 +1,35 @@
-import React from 'react'
-import HeroSm from '../../components/HeroSm/herosm'
+import React, {useEffect, useState} from 'react'
+import Hero from '../../components/Hero/hero'
+import Loading from "../../components/Loading/loading"
 import ProjectCard from '../../components/ProjectCard/projectcard'
 import Watermark from '../../components/Watermark/watermark'
 import './portfolio.css'
 
 export default function Portfolio() {
+
+  const [loading, setLoading] = useState(true)
+
+  const onLoadedData = () => {
+    let timeleft = 1
+      let countdown = setInterval(() => {
+          if (timeleft === 0){
+              setLoading(false);
+              clearInterval(countdown)
+          } else {
+              timeleft = timeleft - 1;
+          }
+      }, 500);
+  }
+
+  useEffect(() => {
+    onLoadedData()
+    console.log("running");
+  }, [ProjectCard])
+
     return (
         <>
-        <HeroSm header="Portfolio"/>
+        <Loading display={loading}/>
+        <Hero text="Portfolio"/>
         <div className="buffer"></div>
         <div className="row justify-content-center row-margin">
             <ProjectCard imgsrc='./images/planit.png' project="PLANiT" summary="PLANiT uses a React.js front end, along with MongoDB to create a robust, full MERN application that serves as a collaborative travel planning platform. Users create planning boards where an unlimited amount of invited guests suggest and vote on trip plans." githublink="https://github.com/zackdeacon/planit-frontend" deployedlink="https://travelplanit.herokuapp.com/" />

@@ -7,19 +7,16 @@ export default function Loading(props) {
 
     const displayNone = () => {
         if (props.display === true) {
-            console.log("waiting");
         }else {
             let timeleft = 1
             let countdown = setInterval(() => {
                 if (timeleft === 0){
                     setClassName("disappear");
                     clearInterval(countdown);
-                    console.log("complete")
                 } else {
                     timeleft = timeleft - 1;
-                    console.log("running");
                 }
-            }, 250);
+            }, 500);
         }
     }
 

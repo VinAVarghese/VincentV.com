@@ -1,14 +1,34 @@
-import React from 'react'
-import HeroSm from '../../components/HeroSm/herosm'
+import React, {useState, useEffect} from 'react'
+import Hero from '../../components/Hero/hero'
 // import EmailForm from '../../components/EmailForm/emailform'
 import Watermark from '../../components/Watermark/watermark'
+import Loading from "../../components/Loading/loading"
 import './contact.css'
 
 export default function Contact() {
+    const [loading, setLoading] = useState(true)
+
+    const onLoadedData = () => {
+        let timeleft = 1
+        let countdown = setInterval(() => {
+            if (timeleft === 0){
+                setLoading(false);
+                clearInterval(countdown)
+            } else {
+                timeleft = timeleft - 1;
+            }
+        }, 500);
+    }
+
+    useEffect(() => {
+        onLoadedData()
+        console.log("running");
+    }, [Hero])
+
     return (
         <>
-        <HeroSm header="Contact"/>
-
+        <Loading display={loading}/>
+        <Hero text="Contact"/>
         <section className="row justify-content-center">
             <section className="col-9 thankyou">
                 <h2>Thank You</h2>

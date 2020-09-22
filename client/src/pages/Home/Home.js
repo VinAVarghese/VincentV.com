@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Hero from "../../components/Hero/hero"
 import Loading from "../../components/Loading/loading"
 import './home.css';
@@ -19,6 +19,11 @@ function Home() {
       }, 1000);
   }
 
+  useEffect(() => {
+    onLoadedData()
+    console.log("running");
+  }, [Hero])
+
   return (
     <>
     <Loading display={loading}/>
@@ -26,7 +31,7 @@ function Home() {
     <section className="container">
       <figure className="row justify-content-center">
         <div className="col-sm-4 col-xs-8">
-          <img className="img-fluid" id="biopic" src="./images/desatpic.jpg" alt="profilepic" onLoad={onLoadedData}/>
+          <img className="img-fluid" id="biopic" src="./images/desatpic.jpg" alt="profilepic"/>
         </div>
       </figure>
       <article className="bio row justify-content-sm-center">  
