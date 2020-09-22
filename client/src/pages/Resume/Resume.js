@@ -22,7 +22,7 @@ function Resume() {
   useEffect(() => {
     onLoadedData()
     console.log("running");
-  }, [Hero])
+  }, [])
 
   return (
     <>

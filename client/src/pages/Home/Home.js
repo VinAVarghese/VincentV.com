@@ -22,7 +22,7 @@ function Home() {
   useEffect(() => {
     onLoadedData()
     console.log("running");
-  }, [Hero])
+  }, [])
 
   return (
     <>

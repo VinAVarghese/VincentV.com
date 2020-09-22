@@ -6,7 +6,7 @@ export default function Modal(props) {
     const [modalVisible, setModalVisible] = useState(true)
 
     useEffect(() => {
-        setModalVisible(!modalVisible)
+        setModalVisible(modalVisible => !modalVisible)
     }, [props.visible])
 
     const toggleModal = () => {

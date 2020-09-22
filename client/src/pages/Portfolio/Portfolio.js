@@ -24,7 +24,7 @@ export default function Portfolio() {
   useEffect(() => {
     onLoadedData()
     console.log("running");
-  }, [ProjectCard])
+  }, [])
 
     return (
         <>

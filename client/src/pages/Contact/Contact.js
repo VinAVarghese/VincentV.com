@@ -23,7 +23,7 @@ export default function Contact() {
     useEffect(() => {
         onLoadedData()
         console.log("running");
-    }, [Hero])
+    }, [])
 
     return (
         <>
