@@ -18,7 +18,7 @@ export default function Portfolio() {
           } else {
               timeleft = timeleft - 1;
           }
-      }, 500);
+      }, 1500);
   }
 
   useEffect(() => {
