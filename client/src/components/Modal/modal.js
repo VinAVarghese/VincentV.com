@@ -20,9 +20,11 @@ export default function Modal(props) {
                     <div className="x">X</div>
                     <div className="container">
                         <div className="content-div row justify-content-center">
-                            <h1>The ArrowPeaks</h1>
-                            <img className="m-logo" src="./images/logothumbnail.png" alt="logo-r"/>  
-                            <h4>A logo I created for myself and my portfolio. The image is reminiscent of mountain peaks both upright and upended or, arrows pointing here and to. <br/> <br/> I love the idea of working together to reach new heights, collaborating to challenge the norm, and developing to bring upon change. <br/><br/> The ArrowPeaks represent team work that subverts what was thought possible and looks at challenges as opportunities.</h4> 
+                                <h1>The ArrowPeaks</h1>
+                                <div className="m-logo">
+                                    <img className="img-fluid" src="./images/logothumbnail.png" alt="logo-r"/>  
+                                </div>
+                                <h4>A logo I created for myself and my portfolio. The image is reminiscent of mountain peaks both upright and upended or, arrows pointing here and to. <br/> <br/> I love the idea of working together to reach new heights, collaborating to challenge the norm, and developing to bring upon change. <br/><br/> The ArrowPeaks represent team work that subverts what was thought possible and looks at challenges as opportunities.</h4> 
                         </div>
                     </div>
                 </div>
