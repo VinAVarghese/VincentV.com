@@ -14,15 +14,16 @@ export default function Modal(props) {
     }    
 
     return (
-        <div className={modalVisible?"on":"off"}>
+        <div className="on">
+        {/* {modalVisible?"on":"off"}> */}
             <button className="click-off" onClick={toggleModal}>
                 <div className="modal-div">
                     <div className="x">X</div>
-                    <div className="row align-items-center content-div-height">
+                    <div className="container align-items-center content-div-height">
                         <div className="row justify-content-center">
                             <h1>The ArrowPeaks</h1>
                             <img className="m-logo" src="./images/logothumbnail.png" alt="logo-r"/>  
-                            <h4>A fun logo I created for myself and my portfolio. The image at a base level represents the "V" characters in my name but also is reminiscent of mountain peaks both upright and upended or, arrows pointing here and to. <br/> <br/> I love the idea of working together to reach new heights, collaborating to challenge the norm, and coding to bring upon change. <br/><br/> The ArrowPeaks represent team work that subverts what was thought possible and looks at challenges as opportunities.</h4> 
+                            <h4>A logo I created for myself and my portfolio. The image is reminiscent of mountain peaks both upright and upended or, arrows pointing here and to. <br/> <br/> I love the idea of working together to reach new heights, collaborating to challenge the norm, and developing to bring upon change. <br/><br/> The ArrowPeaks represent team work that subverts what was thought possible and looks at challenges as opportunities.</h4> 
                         </div>
                     </div>
                 </div>
