@@ -32,6 +32,12 @@
     }
 }
 
+@media only screen and (max-device-width: 475px) {
+    .loading-logo{
+        top:40%;
+    }
+}
+
 /* For future developement (animating both halves of the logo individually) */
 /* .loading-logo-l{
     position: fixed;
